@@ -39,6 +39,13 @@ Using digital modulation schemes, once we have assigned 'symbols' for each chunk
 <img src="https://github.com/bradleeharr/digital-qam-modulation/assets/56418392/8d4aa6f6-27a4-4a3d-9182-f7d8b17d2591" style="max-width:600px; width: 500px;"/>
 </p>
 
+As data is mapped to symbols over time, they form a signal over time:
+<p align="center">
+  <img src="https://github.com/bradleeharr/digital-qam-modulation/assets/56418392/bb101984-129a-45bf-8571-28ee4a6aaf10">
+</p>
+
+This signal has both imaginary (blue) and complex (red) components. This practice of using imaginary numbers is helpful for setting up the signal in theory, but to transmit over a real channel (which has no imaginary component), the signal must be real. Modulation is also performed to convert the signal up to a higher frequency that will propagate better through the environment.
+
 ### Upsampling and Modulation 
 
 <p align="center">
