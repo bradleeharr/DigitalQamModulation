@@ -48,6 +48,31 @@ This signal has both imaginary (blue) and complex (red) components. This practic
 
 ### Upsampling and Modulation 
 
+When the baseband signal is modulated, the real and imaginary parts go into the amplitude and the phase of the signal. For example, in the below image, there are 4 distinct amplitude levels: this is because in the 16-QAM constellation, there is a possibility of 4 different amplitudes. For each amplitude, value, there are 4 possible phase differences. The differences in amplitude is why this is called 'amplitude' modulation, and the fact that we use an imaginary and a real part to the signal to getnerate phase differences for each amplitude is why this is called 'quadrature' amplitude modulation.
+
+|  Bits  |   I   |   Q   | Amplitude (sqrt(I^2 + Q^2)) |
+|--------|-------|-------|-----------------------------|
+| 0000   | -3    | -3    | sqrt(18) ≈ 4.24             |
+| 0001   | -3    | -1    | sqrt(10) ≈ 3.16             |
+| 0010   | -3    |  1    | sqrt(10) ≈ 3.16             |
+| 0011   | -3    |  3    | sqrt(18) ≈ 4.24             |
+| 0100   | -1    | -3    | sqrt(10) ≈ 3.16             |
+| 0101   | -1    | -1    | sqrt(2) ≈ 1.41              |
+| 0110   | -1    |  1    | sqrt(2) ≈ 1.41              |
+| 0111   | -1    |  3    | sqrt(10) ≈ 3.16             |
+| 1000   |  1    | -3    | sqrt(10) ≈ 3.16             |
+| 1001   |  1    | -1    | sqrt(2) ≈ 1.41              |
+| 1010   |  1    |  1    | sqrt(2) ≈ 1.41              |
+| 1011   |  1    |  3    | sqrt(10) ≈ 3.16             |
+| 1100   |  3    | -3    | sqrt(18) ≈ 4.24             |
+| 1101   |  3    | -1    | sqrt(10) ≈ 3.16             |
+| 1110   |  3    |  1    | sqrt(10) ≈ 3.16             |
+| 1111   |  3    |  3    | sqrt(18) ≈ 4.24             |
+
+
+<p align="center"> <img src="https://github.com/bradleeharr/digital-qam-modulation/assets/56418392/37fcacc2-d47d-465d-8429-45f40f4518d3" style="max-width:800px; width:800px;> 
+</p>
+
 <p align="center">
 <img src="https://github.com/bradleeharr/digital-qam-modulation/assets/56418392/fefbfcae-e875-48ae-a63b-3077b4fef8c5" style="max-width:800px; width:800px;"/>
 </p>
