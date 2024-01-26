@@ -8,7 +8,7 @@
 
 1. Say we have a stream of data.
 
-2. This data is represented in bits
+2. This data is represented in bits.
 
 3. These bits are what we want to transmit.
 
