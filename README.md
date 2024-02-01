@@ -48,7 +48,7 @@ This signal has both imaginary (blue) and complex (red) components. This practic
 
 ### Upsampling and Modulation 
 
-When the baseband signal is modulated, the real and imaginary parts go into the amplitude and the phase of the signal. For example, in the below image, there are 4 distinct amplitude levels: this is because in the 16-QAM constellation, there is a possibility of 4 different amplitudes. For each amplitude, value, there are 4 possible phase differences. The differences in amplitude is why this is called 'amplitude' modulation, and the fact that we use an imaginary and a real part to the signal to getnerate phase differences for each amplitude is why this is called 'quadrature' amplitude modulation.
+When the baseband signal is modulated, the real and imaginary parts go into the amplitude and the phase of the signal. For example, in the below image, there are 4 distinct amplitude levels: this is because in the 16-QAM constellation, there is a possibility of 4 different amplitudes. For each amplitude, value, there are 4 possible phase differences. The differences in amplitude is why this is called 'amplitude' modulation, and the fact that we use an imaginary and a real part to the signal to generate phase differences for each amplitude is why this is called 'quadrature' amplitude modulation.
 
 |  Bits  |   I   |   Q   | Amplitude (sqrt(I^2 + Q^2)) |
 |--------|-------|-------|-----------------------------|
