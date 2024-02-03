@@ -78,3 +78,6 @@ When the baseband signal is modulated, the real and imaginary parts go into the 
 </p>
 
 ### Pulse-Shaping 
+### Inter-Symbol Interference
+Inter-Symbol Interference is an issue caused when a modulated signal goes through a channel with multiple paths. This is called 'multipath.' 
+Inter-Symbol Interference stands for just that -- interference between symbols. As one symbol travels through a channel, it gets distorted by another symbol.
