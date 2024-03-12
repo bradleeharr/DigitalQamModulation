@@ -80,6 +80,6 @@ When the baseband signal is modulated, the real and imaginary parts go into the 
 ### Pulse-Shaping 
 ### Inter-Symbol Interference
 Inter-Symbol Interference is an issue caused when a modulated signal goes through a channel with multiple paths. This is called 'multipath.' 
-Inter-Symbol Interference stands for just that -- interference between symbols. As one symbol travels through a channel, it gets distorted by another symbol.
+Inter-Symbol Interference stands for the interference between symbols that can be caused when there is a delay spread over the channel. As one symbol travels through a channel, it may be received with a copy of a previous symbol from a reflection, causing self-interference.
 
 To reduce inter-symbol interference in QAM modulation a pulse-shaping filter is used. This filter stops the symbol from having an abrupt cutoffs and steps, instead smoothing the transition between symbols. The pulse-shaping filter also tightens the bandwidth of the signal, but typically has a roll-off factor that allows for some excess bandwidth, making the signal easier to receive.
